@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1120px;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #7D7987;
+}
+
+.btn-custom {
+    display: block;
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    background-color: #458FF6;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    line-height: 56px;
+}
+
+.btn-custom-out {
+    display: block;
+    width: 200px;
+    height: 56px;
+    border-radius: 55px;
+    border: 1.4px solid #458FF6;
+    font-weight: 700;
+    color: #458FF6;
+    text-align: center;
+    line-height: 56px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+
+.header--nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.header--nav_logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header--nav_logo a {
+    color: #458FF6;
+}
+
+.header--nav_links ul {
+    display: flex;
+    gap: 40px;
+}
+
+.header--nav_links ul li a {
+    color: #1F1534;
+    font-weight: 500;
+    color: #6b6666;
+}
+
+.header--nav_links ul .nav-active {
+    font-weight: 700;
+    color: #000;
+}
+
+.header--banner_left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.services {
+    background-image: url(../images/sv-bg.png);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+}
+
+.services a {
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
+.services--title {
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    text-align: center;
+    padding-top: 190px;
+}
+
+.services--span {
+    padding-bottom: 80px;
+    padding-right: 80px;
+    padding-left: 80px;
+    text-align: center;
+}
+
+.services--list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.services--list_item {
+    width: 340px;
+    min-height: 355px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 45px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.services--list_item div {
+    min-height: 190px;
+    padding-top: 55px;
+    padding-bottom: 33px;
+}
+
+.services--list_item h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.services--list_item p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.find {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 220px;
+}
+
+.find--textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 140px;
+}
+
+.find--textbox hr {
+    width: 55px;
+    border-top: 2px solid #000;
+}
+
+.find--textbox h3 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.find--textbox p {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.apps {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 220px;
+}
+
+.apps--textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 140px;
+}
+
+.apps--textbox hr {
+    width: 55px;
+    border-top: 2px solid #000;
+}
+
+.apps--textbox h3 {
+    color: #000;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 56px;
+    padding-right: 100px;
+}
+
+.apps--textbox p {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.apps--textbox a ion-icon {
+    padding-left: 6px;
+    font-size: 18px;
+    --ionicon-stroke-width: 46px;
+}
+
+.aboutus {
+    background-image: url(../images/co-bg.png);
+    background-repeat: no-repeat;
+    background-position: right, center;
+    margin-top: 220px;
+}
+
+.aboutus .btn-custom-out {
+    margin: 0 auto;
+}
+
+.aboutus--title {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: #000;
+    padding-bottom: 15px;
+}
+
+.aboutus hr {
+    width: 56px;
+    border-top: 2px solid #000;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.aboutus--post {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 75px;
+}
+
+.aboutus--post_item {
+    max-width: 350px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    background-color: #fff;
+}
+
+.aboutus--post_item img {
+    height: 245px;
+}
+
+.aboutus--post_item h3 {
+    font-size: 21px;
+    font-weight: 700;
+    padding: 20px 30px 7px 30px;
+    color: #000;
+}
+
+.aboutus--post_item p {
+    padding: 0px 30px;
+}
+
+.aboutus--post_item .readmore {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #458FF6;
+    padding-bottom: 35px;
+}
+
+.aboutus--post_item .readmore a {
+    font-size: 17px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.footer {
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    color: #fff;
+    margin-top: 200px;
+    position: relative;
+}
+
+.footer img {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.footer--post {
+    display: grid;
+    grid-template-columns: 4fr 2fr 2fr 2fr;
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.footer--post_itemm p {
+    padding-left: 60px;
+    cursor: pointer;
+}
+
+.footer--post_itemm p:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 25px;
+}
+
+.footer--post_itemb {
+    padding-right: 57px;
+}
+
+.footer--post_itemb h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 35px;
+    cursor: pointer;
+}
+
+.footer--post_itemb p:nth-child(3) {
+    margin-top: 45px;
+    font-size: 16px;
+}
+
+/*# sourceMappingURL=app.css.map */
